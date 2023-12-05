@@ -24,7 +24,7 @@ const RegistraionForm = () => {
 
 let [Hobbies,setHobbies] = useState([])
 
-   let stateData=['Maharashtra','Gujrat','Chattisgarh','Rajasthan','TamilNadu','MP','UP','Himachal Pradesh','J&k','Karnataka','Delhi','Manipur','Assam','Kerala','Jharkhand','Telangana','Bihar','Goa','Haryana','Nagaland','Tripura','Mizoram']
+   let stateData=['Maharashtra','Gujarat','Chattisgarh','Rajasthan','TamilNadu','MP','UP','Himachal Pradesh','J&k','Karnataka','Delhi','Manipur','Assam','Kerala','Jharkhand','Telangana','Bihar','Goa','Haryana','Nagaland','Tripura','Mizoram']
 
     // let {Sports,Singing,Travelling}=Hobbies
 
@@ -44,7 +44,7 @@ let [Hobbies,setHobbies] = useState([])
 
          
 
-           axios.post('http://localhost:4020/student/addstudent',studentData)
+           axios.post('https://mern-form-0rhv.onrender.com/student/addstudent',studentData)
            .then((res)=>{
               console.log(res.data);
               setShow(true)
